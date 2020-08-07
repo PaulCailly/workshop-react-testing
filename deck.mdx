@@ -1,0 +1,155 @@
+import { Appear, Head, Image, Notes } from "mdx-deck";
+import { swiss, prism } from "mdx-deck/themes";
+
+import { custom } from "./theme";
+
+export const themes = [swiss, prism, custom];
+
+import logo from "./images/logo.png";
+import what from "./images/what.gif";
+import why from "./images/why.gif";
+import documentation from "./images/documentation.gif";
+import consistency from "./images/consistency.gif";
+import confidence from "./images/confidence.gif";
+import productivity from "./images/productivity.gif";
+import jest from "./images/jest.png";
+
+<Head>
+  <title>Tester vos composants React avec Jest et React Testing Library</title>
+
+  <meta name='twitter:card' content='summary_large_image' />
+  <meta name='twitter:title' content='mdx-deck' />
+  <meta name='twitter:description' content='Tester vos composants React avec Jest et React Testing Library' />
+</Head>
+
+<img src={logo} size="fit" />
+
+# Tester vos composants React avec Jest & React Testing Library
+
+Paul Cailly
+
+---
+
+# Au programme
+
+- Quoi et pourquoi ?
+- Les types de tests
+- Les outils pour écrire les tests
+- Live coding
+
+---
+
+# Qu'est ce qu'un test ?
+
+Du code écrit pour vérifier le bon fonctionnement de votre application
+
+<img src={what} style={{ maxWidth: "420px" }} />
+
+---
+
+# Pourquoi écrire des tests ?
+
+Tester c'est douter, non ?
+
+<img src={why} style={{ maxWidth: "420px" }} />
+
+---
+
+# Documentation
+
+Les tests sont la spécification de comment notre code fonctionne
+
+<img src={documentation} style={{ maxWidth: "420px" }} />
+
+---
+
+# Consistence
+
+Vérifier que les autres developeurs suivent les bonnes pratiques et les conventions de votre équipe
+
+<img src={consistency} style={{ maxWidth: "420px" }} />
+
+---
+
+# Confiance
+
+Une suite de tests solide assure un processus d'itération sain
+
+<img src={confidence} style={{ maxWidth: "420px" }} />
+
+---
+
+# Productivité
+
+Ecrire des tests permet de délivrer du code de qualité rapidement
+
+<img src={productivity} style={{ maxWidth: "420px" }} />
+
+---
+
+# Les types de tests
+
+- **End-to-End**: Lancer votre App et simuler le comportement de l'utilisateur final le plus fidélement possible
+- **Integration**: Vérifier que plusieurs composants fonctionnent correctement ensemble
+- **Unit**: Vérifier la fonctionnalité d'un composant ou d'une fonction en particulier
+- **Static**: Trouver les erreurs au moment d'écrire le code (ESLint, TypeScript, Flow, ...)
+
+---
+
+# Un simple test
+
+```js
+const expected = true;
+const actual = false;
+
+if (actual !== expected) {
+  throw new Error(`${actual} is not ${expected}`);
+}
+```
+
+---
+
+# Un output peu utile
+
+```bash
+node tests/basic.test.js
+/Users/pcailly/dev/workshop-react-testing/tests/basic.test.js:5
+throw new Error(`${actual} is not ${expected}`);
+^
+
+Error: true is not false
+  at Object.<anonymous> (/Users/pcailly/dev/workshop-react-testing/tests/basic.test.js:5:9)
+  at Module._compile (internal/modules/cjs/loader.js:776:30)
+  at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+  at Module.load (internal/modules/cjs/loader.js:653:32)
+  at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+  at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+  at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+  at startup (internal/bootstrap/node.js:283:19)
+  at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+```
+
+---
+
+# Un test avec Jest
+
+```js
+const expected = true;
+const actual = false;
+
+test("it works", () => {
+  expect(actual).toBe(expected);
+});
+```
+
+---
+
+# Un output plus utile
+
+<img src={jest} style={{ maxWidth: "1260px" }} />
+
+---
+
+# Questions ?
+
+Avant de passer au live coding
