@@ -38,7 +38,7 @@ export const AppAsync = () => {
       </ul>
 
       <form onSubmit={handleSubmit}>
-        <label htmlFor="new-todo">Qu'est que je dois acheter ?</label>
+        <label htmlFor="new-todo">Qu'est ce que je dois acheter ?</label>
         <br />
         <input id="new-todo" onChange={handleChange} value={text} />
         <button>Ajouter #{items.length + 1}</button>
