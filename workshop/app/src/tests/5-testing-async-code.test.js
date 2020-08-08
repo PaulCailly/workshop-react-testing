@@ -1,20 +1,6 @@
-import * as React from "react";
-import { fireEvent, render, waitFor } from "@testing-library/react";
-
-import { AppAsync } from "../AppAsync";
-import { api } from "../API";
-
-jest.mock("../API");
-const createItem = api.createItem;
-
 test("allows users to add items to their list", async () => {
-  const todoText = "Tomates";
-  createItem.mockResolvedValueOnce({ id: 123, text: todoText });
-  const { getByText, getByLabelText } = render(<AppAsync />);
-
-  const input = getByLabelText("Qu'est que je dois acheter ?");
-  fireEvent.change(input, { target: { value: todoText } });
-  fireEvent.click(getByText("Ajouter #1"));
-
-  await waitFor(() => getByText(todoText));
+  // 1.a - Mocker le retour de la fonction api.createItem
+  // 1.b - Faire un rendu de l'App Async et récuperer les Getters de testing-library
+  // 2 - Simuler le remplissage de l'input et le click sur le button
+  // 3 - Utiliser les APIs de react-testing library pour faire des assertions
 });
