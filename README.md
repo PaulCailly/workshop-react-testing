@@ -36,3 +36,14 @@ cd workshop/app && yarn start
 ```
 git checkout master
 ```
+
+## 📚 Ressources
+
+### Reading list
+* https://kentcdodds.com/blog/but-really-what-is-a-javascript-test
+* https://kentcdodds.com/blog/test-isolation-with-react
+* https://kentcdodds.com/blog/common-mistakes-with-react-testing-library
+
+### Documentation
+* https://jestjs.io/docs/en/getting-started
+* https://testing-library.com/docs/react-testing-library/intro
