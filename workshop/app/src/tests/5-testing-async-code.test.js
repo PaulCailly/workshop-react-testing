@@ -12,7 +12,7 @@ test("allows users to add items to their list", async () => {
   createItem.mockResolvedValueOnce({ id: 123, text: todoText });
   const { getByText, getByLabelText } = render(<AppAsync />);
 
-  const input = getByLabelText("Qu'est que je dois acheter ?");
+  const input = getByLabelText("Qu'est ce que je dois acheter ?");
   fireEvent.change(input, { target: { value: todoText } });
   fireEvent.click(getByText("Ajouter #1"));
 

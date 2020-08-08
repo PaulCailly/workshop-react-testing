@@ -7,6 +7,6 @@ test("renders the correct content", () => {
   const { getByText, getByLabelText } = render(<App />);
 
   getByText("Liste de courses");
-  getByLabelText("Qu'est que je dois acheter ?");
+  getByLabelText("Qu'est ce que je dois acheter ?");
   getByText("Ajouter #1");
 });

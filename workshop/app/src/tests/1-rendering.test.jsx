@@ -11,7 +11,7 @@ test("renders the correct content", () => {
   // Utiliser les APIs du DOM (querySelector) pour faire des assertions
   expect(root.querySelector("h1").textContent).toBe("Liste de courses");
   expect(root.querySelector("label").textContent).toBe(
-    "Qu'est que je dois acheter ?"
+    "Qu'est ce que je dois acheter ?"
   );
   expect(root.querySelector("button").textContent).toBe("Ajouter #1");
 });
