@@ -1,7 +1,7 @@
 # Tester vos composants React avec Jest et React Testing Library
 
 Dans ce workshop nous allons voir comment tester des composants React à l'aide du framework Jest et de la librairie testing-library. 
-Pour cela nous vous avons mis à disposition une simple App de type todo list et plusieurs tests à écrire pour en vérifier le bon fonctionnement.
+Pour cela, vous avez à disposition une App de type todo list et plusieurs tests à écrire pour en vérifier le bon fonctionnement.
 
 ## Ce que je vais apprendre
 
