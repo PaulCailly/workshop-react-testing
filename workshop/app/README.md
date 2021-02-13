@@ -1,17 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-"dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "@types/jest": "^26.0.9",
-    "@types/testing-library__react": "9.1.2",
-    "jest": "24.9.0"
-  },
-
 ## Available Scripts
 
 In the project directory, you can run:
