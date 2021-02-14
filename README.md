@@ -43,6 +43,7 @@ git checkout master
 * https://kentcdodds.com/blog/but-really-what-is-a-javascript-test
 * https://kentcdodds.com/blog/test-isolation-with-react
 * https://kentcdodds.com/blog/common-mistakes-with-react-testing-library
+* https://blog.octo.com/la-pyramide-des-tests-par-la-pratique-5-5/
 
 ### Documentation
 * https://jestjs.io/docs/en/getting-started
